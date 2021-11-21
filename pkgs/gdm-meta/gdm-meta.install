@@ -1,0 +1,8 @@
+post_install() {
+   systemctl enable gdm.service
+}
+
+
+pre_remove() {
+   systemctl disable gdm.service
+}

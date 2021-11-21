@@ -1,0 +1,14 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
+pkgname=gnome-minimal
+pkgver=1
+pkgrel=1
+pkgdesc="A minimal GNOME desktop"
+arch=(any)
+url="https://github.com/realmazharhussain/meta-pkgs/pkgs/gnome-minimal"
+license=('GPL')
+depends=('gnome-session-minimal' 'gnome-apps-minimal')
