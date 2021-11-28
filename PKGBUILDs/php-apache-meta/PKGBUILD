@@ -1,0 +1,15 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
+pkgname=php-apache-meta
+pkgver=1
+pkgrel=1
+pkgdesc="Meta Package for PHP-Apache"
+arch=(any)
+url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
+license=('GPL')
+depends=('php-apache')
+install=$pkgname.install

@@ -1,0 +1,22 @@
+post_install() {
+   sed -E\
+       -e '/LoadModule.*modules\/mod_mpm_event.so/s/^/#/'\
+       -e '/LoadModule.*modules\/mod_mpm_prefork.so/s/^[[:space:]]*#//'\
+       -i /etc/httpd/conf/httpd.conf
+   echo -e '# Php Stuff'
+   echo 'LoadModule php_module modules/libphp.so'
+   echo 'AddHandler php-script .php'
+   echo 'Include conf/extra/php_module.conf'
+}
+
+
+pre_remove() {
+   sed -E\
+       -e '/LoadModule.*modules\/mod_mpm_event.so/s/^[[:space:]]*#//'\
+       -e '/LoadModule.*modules\/mod_mpm_prefork.so/s/^/#/'\
+       -e '/# Php Stuff/d'\
+       -e '/LoadModule.*modules\/libphp.so/d'\
+       -e '/AddHandler.*\.php/d'\
+       -e '/Include conf\/extra\/php_module.conf/d'\
+       -i /etc/httpd/conf/httpd.conf
+}
