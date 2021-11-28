@@ -1,0 +1,9 @@
+# Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
+pkgname=mariadb-meta
+pkgver=1
+pkgrel=1
+pkgdesc="Meta Package for mariadb"
+arch=(any)
+url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
+license=('GPL')
+depends=(mariadb)

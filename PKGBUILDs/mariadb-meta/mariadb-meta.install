@@ -1,0 +1,12 @@
+post_install() {
+   sed -E\
+      -e '/extension=pdo_mysql/s|^[[:space:]]*;||'\
+      -e '/extension=mysqli/s|^[[:space:]]*;||'\
+      -i /etc/php/php.ini
+}
+pre_remove() {
+   sed -E\
+      -e '/extension=pdo_mysql/s|^|;|'\
+      -e '/extension=mysqli/s|^|;|'\
+      -i /etc/php/php.ini
+}
