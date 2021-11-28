@@ -1,0 +1,17 @@
+# Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
+pkgname=phpmyadmin-meta
+pkgver=1
+pkgrel=1
+pkgdesc="Meta Package for phpMyAdmin"
+arch=(any)
+url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
+license=('GPL')
+depends=(phpmyadmin)
+install=$pkgname.install
+source=('phpmyadmin.conf')
+backup=(etc/httpd/conf/extra/phpmyadmin.conf)
+md5sums=(SKIP)
+
+package() {
+   install -D "$srcdir/phpmyadmin.conf" "$pkgdir/etc/httpd/conf/extra/phpmyadmin.conf"
+}
