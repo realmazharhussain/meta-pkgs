@@ -30,7 +30,9 @@ pkgdesc=\"Meta Package for ${_pkgname:-$pkgname}\"
 arch=(any)
 url=\"https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/\$pkgname\"
 license=('GPL')
-depends=(${_pkgname})"
+depends=(${_pkgname})
+install=\$pkgname.install
+"
 
 mkdir -p "$pkgdir"
 echo "$PKGBUILD" > "$pkgdir/PKGBUILD"

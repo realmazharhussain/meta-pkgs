@@ -7,3 +7,4 @@ arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
 license=('GPL')
 depends=(mariadb)
+install=$pkgname.install
