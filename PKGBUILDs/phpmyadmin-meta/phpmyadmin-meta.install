@@ -1,15 +1,14 @@
 post_install() {
-   conf_file=/etc/php/php.ini
    sed -E\
       -e '/;extension=iconv/s|^;||'\
       -e '/;extension=bz2/s|^;||'\
       -e '/;extension=zip/s|^;||'\
-      -i $conf_file
+      -i /etc/php/php.ini
 
    {
       echo -e '# phpMyAdmin Stuff'
       echo 'Include conf/extra/phpmyadmin.conf'
-   } >> $conf_file
+   } >> /etc/httpd/conf/httpd.conf
 
    systemctl restart httpd.service
 }
@@ -18,9 +17,11 @@ pre_remove() {
       -e '/^extension=iconv/s|^|;|'\
       -e '/^extension=bz2/s|^|;|'\
       -e '/^extension=zip/s|^|;|'\
-      -e '/# phpMyAdmin Stuff/d'\
-      -e '/Include conf/extra/phpmyadmin.conf/d'\
       -i /etc/php/php.ini
+   sed -E\
+      -e '/# phpMyAdmin Stuff/d'\
+      -e '/Include conf\/extra\/phpmyadmin\.conf/d'\
+      -i /etc/httpd/conf/httpd.conf
 
    systemctl restart httpd.service
 }
