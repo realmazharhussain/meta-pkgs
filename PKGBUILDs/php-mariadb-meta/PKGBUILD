@@ -1,0 +1,11 @@
+# Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
+pkgname=php-mariadb-meta
+pkgver=1
+pkgrel=1
+pkgdesc="Meta Package for php-mariadb"
+arch=(any)
+url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
+license=('GPL')
+depends=(php mariadb-meta)
+install=$pkgname.install
+

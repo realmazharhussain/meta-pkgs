@@ -1,14 +1,6 @@
 post_install() {
    mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
    systemctl enable --now mariadb.service
-   sed -E\
-      -e '/;extension=pdo_mysql/s|^;||'\
-      -e '/;extension=mysqli/s|^;||'\
-      -i /etc/php/php.ini
 }
 pre_remove() {
-   sed -E\
-      -e '/^extension=pdo_mysql/s|^|;|'\
-      -e '/^extension=mysqli/s|^|;|'\
-      -i /etc/php/php.ini
 }
