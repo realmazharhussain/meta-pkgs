@@ -9,6 +9,6 @@ pkgver=1
 pkgrel=1
 pkgdesc="A minimal GNOME desktop"
 arch=(any)
-url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname
+url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
 license=('GPL')
 depends=('gnome-session-minimal' 'gnome-apps-minimal')

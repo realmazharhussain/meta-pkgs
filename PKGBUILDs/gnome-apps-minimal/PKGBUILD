@@ -9,6 +9,6 @@ pkgver=1
 pkgrel=1
 pkgdesc="A minimal set of GNOME apps"
 arch=(any)
-url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname
+url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
 license=('GPL')
 depends=('baobab' 'gnome-tweaks' 'gnome-disk-utility' 'gnome-terminal' 'nautilus-admin' 'gedit-plugins')
