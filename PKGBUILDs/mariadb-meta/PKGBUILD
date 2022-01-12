@@ -7,4 +7,11 @@ arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
 license=('GPL')
 depends=(mariadb)
-install=$pkgname.install
+source=('mariadb-meta.hook' 'mariadb-meta.sh')
+md5sums=('SKIP' 'SKIP')
+
+package() {
+   mkdir -p "$pkgdir"/usr/share/libalpm/{hooks,scripts}
+   cp -rt "$pkgdir"/usr/share/libalpm/hooks/ "$srcdir/mariadb-meta.hook"
+   cp -rt "$pkgdir"/usr/share/libalpm/scripts/ "$srcdir/mariadb-meta.sh"
+}

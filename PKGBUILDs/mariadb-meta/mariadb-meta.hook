@@ -1,0 +1,9 @@
+[Trigger]
+Type = Package
+Operation = Install
+Target = mariadb
+
+[Action]
+Description = Configuring mariadb
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/mariadb-meta.sh
