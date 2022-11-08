@@ -6,6 +6,7 @@ pkgdesc="PGP keyring for meta-pkgs pacman repository"
 arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
 license=('GPL')
+install=$pkgname.install
 source=(meta-pkgs.gpg
         meta-pkgs-trusted
         meta-pkgs-revoked)

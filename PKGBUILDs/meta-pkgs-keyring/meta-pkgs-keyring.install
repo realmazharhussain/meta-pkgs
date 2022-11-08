@@ -1,0 +1,7 @@
+post_install() {
+  /usr/bin/pacman-key --populate meta-pkgs
+}
+
+post_upgrade() {
+  post_install
+}
