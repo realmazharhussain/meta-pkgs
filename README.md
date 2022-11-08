@@ -18,4 +18,8 @@ A pacman repository with meta packages which make installing and configuring sof
   ```
 
 ## List of packages
-Either visit [this link](https://github.com/realmazharhussain/meta-pkgs/tree/main/repo) or add this repo to pacman and then run the command `pacman -Sl meta-pkgs` to a list of all the packages in this repo.
+To a list of all the packages in this repo, either
+- visit [this link](https://github.com/realmazharhussain/meta-pkgs/tree/main/repo)
+
+or
+- add this repo to pacman and then run the command `pacman -Sl meta-pkgs`
