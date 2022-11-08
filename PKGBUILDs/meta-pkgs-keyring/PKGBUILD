@@ -1,7 +1,7 @@
 # Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
 pkgname=meta-pkgs-keyring
 pkgver=1
-pkgrel=2
+pkgrel=1
 pkgdesc="PGP keyring for meta-pkgs pacman repository"
 arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
