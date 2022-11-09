@@ -4,7 +4,7 @@ A pacman repository with meta packages which make installing and configuring sof
 ## How to add meta-pkgs to pacman?
 - Install meta-pkgs-keyring
   ```bash
-  sudo pacman -S https://github.com/realmazharhussain/meta-pkgs/raw/main/repo/meta-pkgs-keyring-1-1-any.pkg.tar.zst
+  sudo pacman -U https://github.com/realmazharhussain/meta-pkgs/raw/main/repo/meta-pkgs-keyring-1-1-any.pkg.tar.zst
   ```
 - Add the following at the end of `/etc/pacman.conf` file
   ```
