@@ -5,10 +5,10 @@
 
 # Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
 pkgname=gnome-apps-minimal
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc="A minimal set of GNOME apps"
 arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
 license=('GPL')
-depends=('baobab' 'gnome-tweaks' 'gnome-disk-utility' 'gnome-terminal' 'nautilus-admin' 'gedit-plugins')
+depends=('baobab' 'gnome-tweaks' 'gnome-disk-utility' 'gnome-console' 'nautilus-admin' 'gedit-plugins')
