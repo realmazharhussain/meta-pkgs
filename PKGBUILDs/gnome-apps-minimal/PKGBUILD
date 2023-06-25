@@ -11,4 +11,4 @@ pkgdesc="A minimal set of GNOME apps"
 arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
 license=('GPL')
-depends=('baobab' 'gnome-tweaks' 'gnome-disk-utility' 'gnome-console' 'nautilus-admin' 'gnome-text-editor')
+depends=('baobab' 'gnome-tweaks' 'gnome-disk-utility' 'gnome-console' 'nautilus' 'gnome-text-editor')
