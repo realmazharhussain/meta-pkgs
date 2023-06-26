@@ -6,7 +6,7 @@
 # Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
 pkgname=gnome-apps-minimal
 pkgver=3
-pkgrel=2
+pkgrel=3
 pkgdesc="A minimal set of GNOME apps"
 arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
@@ -16,4 +16,4 @@ depends=(baobab
          gnome-text-editor
          gnome-disk-utility
          gnome-console nautilus
-         gnome-software flatpak)
+         gnome-software flatpak fwupd)
