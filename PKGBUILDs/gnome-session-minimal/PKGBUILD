@@ -12,4 +12,6 @@ depends=(gdm-meta
          gnome-session
          gnome-control-center
          gnome-shell-extensions
-         pipewire-meta)
+         pipewire-meta
+         xdg-desktop-portal
+         xdg-desktop-portal-gnome)
