@@ -1,0 +1,17 @@
+# Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
+pkgname=gstreamer-meta
+pkgver=1
+pkgrel=1
+pkgdesc="Meta Package for gstreamer"
+arch=(any)
+url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
+license=('GPL')
+depends=(gst-plugins-base
+         gst-plugins-good
+         gst-plugins-ugly
+         gst-plugins-bad
+         gstreamer-vaapi
+         gst-plugin-va
+         gst-libav
+         )
+
