@@ -1,17 +1,16 @@
 # Maintainer: Mazhar Hussain <realmazharhussain@gmail.com>
 pkgname=pipewire-meta
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc="Meta Package for pipewire"
 arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
 license=('GPL')
-depends=(pipewire
+depends=(wireplumber
          pipewire-alsa
          pipewire-audio
          pipewire-jack
          pipewire-pulse
          pipewire-v4l2
-         pipewire-zeroconf
-         wireplumber)
+         pipewire-zeroconf)
 
