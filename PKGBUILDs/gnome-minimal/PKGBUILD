@@ -6,9 +6,12 @@
 # Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
 pkgname=gnome-minimal
 pkgver=1
-pkgrel=1
+pkgrel=2
 pkgdesc="A minimal GNOME desktop"
 arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
 license=('GPL')
-depends=('gnome-session-minimal' 'gnome-apps-minimal')
+depends=(gnome-session-minimal
+         gnome-apps-minimal
+         gstreamer-meta
+         gst-plugin-pipewire)
