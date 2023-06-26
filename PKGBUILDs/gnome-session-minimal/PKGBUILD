@@ -19,4 +19,9 @@ depends=(gdm-meta
          pipewire-meta
          xdg-user-dirs
          xdg-desktop-portal-gnome
-         xdg-desktop-portal)
+         xdg-desktop-portal
+         gvfs-goa
+         gvfs-google
+         gvfs-gphoto2
+         gvfs-mtp
+         gvfs-nfs)
