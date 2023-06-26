@@ -1,7 +1,7 @@
 # Maintainer: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>
 pkgname=gnome-session-minimal
 pkgver=2
-pkgrel=2
+pkgrel=3
 pkgdesc="A minimal GNOME desktop session (no apps)"
 arch=(any)
 url="https://github.com/realmazharhussain/meta-pkgs/PKGBUILDs/$pkgname"
@@ -13,5 +13,5 @@ depends=(gdm-meta
          gnome-control-center
          gnome-shell-extensions
          pipewire-meta
-         xdg-desktop-portal
-         xdg-desktop-portal-gnome)
+         xdg-desktop-portal-gnome
+         xdg-desktop-portal)
